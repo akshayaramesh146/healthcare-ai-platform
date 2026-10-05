@@ -1,0 +1,19 @@
+# Phase 1 (foundation)
+python-dotenv
+pytest
+pandas
+numpy
+
+# Phase 2+ (install when you reach them)
+# langchain
+# langchain-community
+# langchain-aws
+# langgraph
+# faiss-cpu
+# sentence-transformers
+# pypdf
+# fastapi
+# uvicorn
+# streamlit
+# ragas
+# boto3
