@@ -24,3 +24,20 @@ SAFETY_DISCLAIMER = (
     "diagnose conditions or recommend personal treatment or medication. Please "
     "consult a qualified healthcare professional for personal medical decisions."
 )
+
+# --- RAG settings (Phase 2) ---
+# Sizes are in characters (~4 characters per token). Tune these by evaluating retrieval.
+CHUNK_SIZE = int(os.getenv("CHUNK_SIZE", "600"))
+CHUNK_OVERLAP = int(os.getenv("CHUNK_OVERLAP", "100"))
+TOP_K = int(os.getenv("TOP_K", "5"))
+
+# filename stem -> topic metadata (used for metadata filtering)
+TOPIC_BY_FILE = {
+    "diabetes_guidelines": "diabetes",
+    "hypertension_guidelines": "hypertension",
+    "heart_health": "heart",
+    "nutrition_guidelines": "nutrition",
+    "medication_safety": "medication",
+    "patient_education": "education",
+    "healthcare_faq": "faq",
+}

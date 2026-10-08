@@ -4,14 +4,19 @@ pytest
 pandas
 numpy
 
-# Phase 2+ (install when you reach them)
+# Phase 2a (RAG ingestion)
+pypdf
+reportlab
+
+# Phase 2b (embeddings + vector store)
+faiss-cpu
+sentence-transformers
+
+# Later phases (install when you reach them)
 # langchain
 # langchain-community
 # langchain-aws
 # langgraph
-# faiss-cpu
-# sentence-transformers
-# pypdf
 # fastapi
 # uvicorn
 # streamlit
